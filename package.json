@@ -1,5 +1,5 @@
 {
-  "name": "globalhack",
+  "name": "Home.me",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -11,7 +11,7 @@
     "test": "./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/karma/bin/karma start karma.conf.js",
     "test:watch": "npm run test -- --watch"
   },
-  "author": "AB Brooks <ab551997@gmail.com>",
+  "author": ["Han Liu <liuhanrick@gmail.com>","AB Brooks <ab551997@gmail.com>"],
   "license": "ISC",
   "dependencies": {
     "classnames": "^2.2.5",
