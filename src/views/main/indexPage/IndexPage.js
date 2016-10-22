@@ -2,10 +2,15 @@ import React, { PropTypes as T } from 'react';
 import {Link} from 'react-router';
 
 import styles from './styles.module.css';
+import Header from 'components/Header/Header'
+import Bar from 'components/Navbar/Navbar'
 
 export class IndexPage extends React.Component {
   render() {
     return (
+      <div id='page' className={styles.wrapper}>
+      <Header />
+      <Bar />
       <div className={styles.content}>
         <h1>Hello from Home.me</h1>
         <p className={styles.padding}>
@@ -19,6 +24,7 @@ export class IndexPage extends React.Component {
             Find the shelter
           </a>
         </p>
+      </div>
       </div>
     )
   }

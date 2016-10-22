@@ -1,6 +1,5 @@
 import React, { PropTypes as T } from 'react'
 
-import Header from 'components/Header/Header'
 import styles from './styles.module.css'
 
 export class Container extends React.Component {
@@ -15,10 +14,7 @@ export class Container extends React.Component {
   render() {
     return (
       <div className={styles.wrapper}>
-        <Header tite="play" />
-        <div className={styles.content}>
-          {this.renderChildren()}
-        </div>
+        {this.renderChildren()}
       </div>
     )
   }
