@@ -23,7 +23,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  title: 'globalhack'
+  title: 'Home.me'
 }
 
 export default Header

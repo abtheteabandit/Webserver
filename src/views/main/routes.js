@@ -14,6 +14,12 @@ export const makeMainRoutes = () => {
             cb(null, mod.default);
           });
         }} />
+      <Route path="form" getComponent={(location, cb) => {
+          require.ensure([], (require) => {
+            const mod = require('./form/form');
+            cb(null, mod.default);
+          });
+        }} />
       {/* inline loading */}
       <IndexRoute component={IndexPage} />
     </Route>

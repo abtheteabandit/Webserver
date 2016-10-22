@@ -3,3 +3,19 @@
 .content {
   padding: var(--padding);
 }
+
+.formBtn {
+  border: 1px solid #ccc;
+  display: inline-block;
+  outline: 0;
+  padding: 20px 60px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+  background-color: #4CAF50;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
