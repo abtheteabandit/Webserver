@@ -19,6 +19,7 @@
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 1px;
+    vertical-align: middle;
 
     line-height: 40px;
     h1 {

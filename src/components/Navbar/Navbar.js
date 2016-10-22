@@ -11,13 +11,11 @@ import MenuItem from 'react-bootstrap/lib/MenuItem'
 export class Bar extends React.Component {
   render() {
     return (
-      <div>
-        <Nav bsClass='Nav' bsStyle='pills' activeKey={1} >
+        <Nav bsStyle='pills' activeKey={1} >
           <NavItem eventKey={1} href="/">Home</NavItem>
           <NavItem eventKey={2} href="/about">About</NavItem>
           <NavItem eventKey={3} disabled>Some other things</NavItem>
         </Nav>
-      </div>
     )
   }
 }

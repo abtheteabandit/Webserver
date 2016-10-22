@@ -23,6 +23,10 @@
   top: 0;
   left: 0;
 
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+
   flex: 1;
   order: 1;
 
@@ -46,4 +50,29 @@
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
+}
+
+.form {
+  overflow-y: scroll;
+  display: flex;
+  margin: 0;
+
+  width:100%;
+  height:100vh;
+  -webkit-box-orient: horizontal;
+  -o-box-orient: horizontal;
+
+  text-align: left;
+
+  flex-direction: column;
+
+  @media (--screen-phone-lg) {
+    flex-direction: row;
+  }
+
+  h1{
+    margin: 10px;
+    font-size: 30px;
+  }
+
 }

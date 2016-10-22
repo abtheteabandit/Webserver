@@ -2,6 +2,7 @@ import React, { PropTypes as T } from 'react'
 import {Link} from 'react-router'
 
 import styles from './styles.module.css';
+import Button from 'react-bootstrap/lib/Button'
 
 export class Header extends React.Component {
   render() {
@@ -11,7 +12,9 @@ export class Header extends React.Component {
       <div className={styles.topbar}>
         <Link className={styles.logo} to="/"><h1>{title}</h1></Link>
         <section>
-          Fullstack.io
+          <Button>
+            CoC Login
+          </Button>
         </section>
       </div>
     )
