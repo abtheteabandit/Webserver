@@ -3,7 +3,6 @@ import {Link} from 'react-router';
 
 import styles from './styles.module.css';
 import Header from 'components/Header/Header'
-import Bar from 'components/Navbar/Navbar'
 import ProgressBar from 'react-bootstrap/lib/ProgressBar'
 import FormGroup from 'react-bootstrap/lib/FormGroup'
 import FormControl from 'react-bootstrap/lib/FormControl'
@@ -20,17 +19,12 @@ export class IndexPage extends React.Component {
     return (
       <div id='page' className={styles.wrapper}>
       <Header />
-      <Bar />
       <div className={styles.content}>
-        <h1>Hello from Home.me</h1>
-        <p className={styles.padding}>
-          We help the homeless find shelters.
-        </p>
-        <p>
+        <div className={styles.front}>
           <a id='formBtn' onClick={enableForm()} className={styles.formBtn} >
             Home ME!
           </a>
-        </p>
+        </div>
         <div id='formWrapper' className={styles.formWrapper}>
           <ProgressBar striped bsStyle='info' now={now} label={`${now}%`} />
           <h1>This is a basic description of what this form is intended for (an

@@ -2,29 +2,43 @@
 
 .wrapper {
   overflow-y: scroll;
-  display: flex;
+  display: block;
   margin: 0;
 
   width:100%;
   height: 100vh;
-  -webkit-box-orient: horizontal;
-  -o-box-orient: horizontal;
-
-  flex-direction: column;
 
 }
 
 .content {
   position: relative;
+  top:0;
+  left:0;
+  display: block;
+
+}
+
+.front{
+  position: relative;
   top: 0;
   left: 0;
 
-  margin-left: 20%;
-  margin-right: 20%;
-  text-align: center;
+  width: 100%;
+  height: 700px;
 
-  flex: 1;
-  order: 1;
+  background-image: url(https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/14611034_1107156602703319_2362010336134108455_n.jpg?oh=f9b3e17f229e9321e12c08f37bd4c166&oe=58ADCA8F);
+  background-size: cover;
+  margin-left: 0;
+  margin-right: 0;
+
+  a {
+    position: relative;
+    top: 40%;
+    width: 20%;
+    display: block;
+    margin-left: 40%;
+    margin-right: 40%;
+  }
 
 }
 
@@ -46,10 +60,13 @@
 
 .formWrapper {
   overflow-y: scroll;
-  display: flex;
-  margin: 0;
+  display: block;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
 
-  width:100%;
+  width:60%;
   height:100vh;
   -webkit-box-orient: horizontal;
   -o-box-orient: horizontal;
